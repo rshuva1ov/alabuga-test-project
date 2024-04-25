@@ -66,7 +66,7 @@ const Pagination: FC<PaginationProps> = ({ currentPage, totalPages, handlePageCh
             1
           </button>
         );
-        pageNumbers.push(<span key="ellipsis" className={styles.ellipsis}>...</span>);
+        pageNumbers.push(<span key="ellipsis1" className={styles.ellipsis}>...</span>);
         for (let i = currentPage - 1; i <= currentPage + 1; i++) {
           pageNumbers.push(
             <button
@@ -78,7 +78,7 @@ const Pagination: FC<PaginationProps> = ({ currentPage, totalPages, handlePageCh
             </button>
           );
         }
-        pageNumbers.push(<span key="ellipsis" className={styles.ellipsis}>...</span>);
+        pageNumbers.push(<span key="ellipsis2" className={styles.ellipsis}>...</span>);
         pageNumbers.push(
           <button key={totalPages} className={`${styles.pageButton} ${currentPage === totalPages ? styles.active : ''}`} onClick={() => handlePageChange(totalPages)}>
             {totalPages}
@@ -96,7 +96,6 @@ const Pagination: FC<PaginationProps> = ({ currentPage, totalPages, handlePageCh
         <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M5.39681 1.18737L0.890839 5.91864L5.39681 10.6499" stroke="black" stroke-width="0.901194" stroke-linecap="round" />
         </svg>
-
       </button>
       {renderPageNumbers()}
       <button disabled={currentPage === totalPages} onClick={() => handlePageChange(currentPage + 1)}>
