@@ -1,13 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --black: #000;
+  --black-rock: #030229;
+  --background: #F5F5F5;
+  --reserved: #2B2B2B;
+  --white: #fff;
+  --h1: hsl(236, 48%, 36%);
+  --gray: #999;
+  --dark-indigo: #2F3587;
+  --sky-blue: #1172B6;
+  --box-shadow: 0px 2.252985715866089px 2.252985715866089px rgba(0, 0, 0, 0.07);
+  --box-shadow2: 7.6045331954956055px 15.209066390991211px 30.418132781982422px rgba(0, 0, 0, 0.07);
+}
+
 body {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background-color: var(--background);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "PT Sans", sans-serif;
+}
+
+* {
+  color: var(--black);
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+h1 a {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--h1);
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.arrow {
+  margin: 0 15px;
 }

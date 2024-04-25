@@ -1,0 +1,18 @@
+.circular {
+    width: 180px;
+    background: #1172B6;
+    border-radius: 12.17px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text {
+    position: absolute;
+    z-index: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #FCFCFC;
+}

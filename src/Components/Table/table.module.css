@@ -1,0 +1,18 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.tableHeader {
+    padding: 13px;
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--black-rock);
+    text-align: left;
+}
+
+.tableCell {
+    padding: 13px;
+    color: var(--reserved);
+}

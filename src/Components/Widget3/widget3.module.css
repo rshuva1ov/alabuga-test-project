@@ -1,0 +1,33 @@
+.buttons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 16px auto 0 auto;
+}
+
+.button {
+    opacity: 1;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: 2.25px;
+    transition: opacity 0.3s ease;
+}
+
+.button:first-child {
+    margin-right: 15px;
+}
+
+.button-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.button-disabled svg path {
+    stroke: var(--gray);
+}
