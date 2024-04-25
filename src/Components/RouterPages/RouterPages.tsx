@@ -11,6 +11,7 @@ export const Modules = () => {
       <h1>
         <Link to="/modules">Модули</Link>
       </h1>
+      <h2><Link to="/">Вернуться на главную</Link></h2>
     </div>
   );
 };
@@ -22,6 +23,7 @@ export const Alabuga = () => {
         <Link to="/modules">Модули</Link><img src={arrow} alt='' className={styles.arrow} />
         <Link to="/modules/alabuga">Алабуга Политех</Link>
       </h1>
+      <h2><Link to="/">Вернуться на главную</Link></h2>
     </div>
   );
 };

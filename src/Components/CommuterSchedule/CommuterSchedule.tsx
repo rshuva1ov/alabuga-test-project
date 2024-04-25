@@ -32,24 +32,30 @@ export const CommuterSchedule: FC<IWidget> = ({ page, onPageChange }) => {
 
   return (
     <div className={styles.commuterSchedule}>
-      <div>
-        <ResponsiveContainer width="100%" height={300}>
-          <BarChart data={data} barSize={30}>
-            <XAxis dataKey="date" interval={0} height={40} tickSize={12} fontSize={12} />
-            <YAxis type="number" domain={[0, 500]} axisLine={false} tickLine={false} />
-            <CartesianGrid strokeDasharray="0 0" stroke="#ccc" />
-            <Tooltip />
-            <Bar
-              dataKey="value"
-              fill="#6BC3D6"
-            >
-              {data.map((entry, index) => (
-                <LabelList key={index} dataKey="value" position="top" />
-              ))}
-            </Bar>
-          </BarChart>
-        </ResponsiveContainer>
-      </div>
+
+      {currentPage === 1
+        ?
+        <div>
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={data} barSize={30}>
+              <XAxis dataKey="date" interval={0} height={40} tickSize={12} fontSize={12} />
+              <YAxis type="number" domain={[0, 500]} axisLine={false} tickLine={false} />
+              <CartesianGrid strokeDasharray="0 0" stroke="#ccc" />
+              <Tooltip />
+              <Bar
+                dataKey="value"
+                fill="#6BC3D6"
+              >
+                {data.map((entry, index) => (
+                  <LabelList key={index} dataKey="value" position="top" />
+                ))}
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+        :
+        <div className={styles.commuterPlug}>Пока нет данных</div>
+      }
       <div className={styles.commuterBox}>
         <div className={styles.commuterMarker}>
           <span></span>
