@@ -16,7 +16,7 @@ export const InfoList: FC<IWidget> = ({ page, onPageChange }) => {
     }
   };
 
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(page);
   const rowsPerPage = 5;
   const totalPages = Math.ceil(data.length / rowsPerPage);
   const startIndex = (currentPage - 1) * rowsPerPage;

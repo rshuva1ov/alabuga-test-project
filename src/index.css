@@ -3,12 +3,15 @@
 :root {
   --black: #000;
   --black-rock: #030229;
+  --wood-smoke: #151516;
   --background: #F5F5F5;
   --reserved: #2B2B2B;
   --white: #fff;
   --h1: hsl(236, 48%, 36%);
   --gray: #999;
+  --athens-gray: #EDEDEE;
   --dark-indigo: #2F3587;
+  --viking: #6BC3D6;
   --sky-blue: #1172B6;
   --box-shadow: 0px 2.252985715866089px 2.252985715866089px rgba(0, 0, 0, 0.07);
   --box-shadow2: 7.6045331954956055px 15.209066390991211px 30.418132781982422px rgba(0, 0, 0, 0.07);

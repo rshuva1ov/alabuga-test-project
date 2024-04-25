@@ -1,9 +1,9 @@
 import { useSearchParams } from 'react-router-dom';
+import { BottomNav } from '../BottomNav';
 import CircularProgressContainer from '../CircularProgressContainer/CircularProgressContainer';
+import { CommuterSchedule } from '../CommuterSchedule';
 import { InfoList } from '../InfoList';
-import { Widget2 } from '../Widget2';
-import { Widget3 } from '../Widget3';
-import styles from './intramuralcontent.module.css'
+import styles from './intramuralcontent.module.css';
 
 export interface IWidget {
   page: number;
@@ -39,13 +39,17 @@ const IntramuralContent = () => {
   };
 
   return (
-    <div>
+    <div className={styles.intramuralContent}>
       <div className={styles.intramuralTop}>
         <CircularProgressContainer />
         <InfoList page={widget1Page} onPageChange={handleWidget1PageChange} />
       </div>
-      <Widget2 page={widget2Page} onPageChange={handleWidget2PageChange} />
-      <Widget3 page={widget3Page} onPageChange={handleWidget3PageChange} />
+      <CommuterSchedule page={widget2Page} onPageChange={handleWidget2PageChange} />
+      <BottomNav page={widget3Page} onPageChange={handleWidget3PageChange} />
+
+      <p>Страница виджета № 1, передаваемая в query: {widget1Page}</p>
+      <p>Страница виджета № 2, передаваемая в query: {widget2Page}</p>
+      <p>Страница виджета № 3, передаваемая в query: {widget3Page}</p>
     </div>
   );
 };

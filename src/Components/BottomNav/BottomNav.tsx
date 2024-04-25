@@ -1,8 +1,8 @@
 import { FC, useState } from 'react';
 import { IWidget } from '../IntramuralContent';
-import styles from './widget3.module.css';
+import styles from './bottomnav.module.css';
 
-export const Widget3: FC<IWidget> = ({ page, onPageChange }) => {
+export const BottomNav: FC<IWidget> = ({ page, onPageChange }) => {
   const [currentPage, setCurrentPage] = useState<number>(1);
 
   const handleNextPage = () => {
